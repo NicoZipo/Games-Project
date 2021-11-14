@@ -22,22 +22,24 @@ public class DrawProjection : MonoBehaviour
     {
         lineRenderer.positionCount = numPoints;
         lineRenderer.sortingOrder = 1;
-lineRenderer.material = new Material (Shader.Find ("Sprites/Default"));
-lineRenderer.material.color = Color.red; 
-    
+        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        lineRenderer.material.color = Color.red;
+
         List<Vector3> points = new List<Vector3>();
         Vector3 startingPosition = cannonController.ShotPoint.position;
         Vector3 startingVelocity = cannonController.ShotPoint.up * cannonController.blastPower;
-        for(float t = 0; t < numPoints; t+= timeBetweenPoitns){
-            Vector3 newPoint = startingPosition + t *startingVelocity;
-            newPoint.y = startingPosition.y + startingVelocity.y * t + Physics.gravity.y/2f *t *t;
+        for (float t = 0; t < numPoints; t += timeBetweenPoitns)
+        {
+            Vector3 newPoint = startingPosition + t * startingVelocity;
+            newPoint.y = startingPosition.y + startingVelocity.y * t + Physics.gravity.y / 2f * t * t;
             points.Add(newPoint);
-             if(Physics.OverlapSphere(newPoint, 2, CollidableLayers).Length >0){
-                 lineRenderer.positionCount = points.Count;
-                 break;
-             }
+            if (Physics.OverlapSphere(newPoint, 2, CollidableLayers).Length > 0)
+            {
+                lineRenderer.positionCount = points.Count;
+                break;
+            }
         }
-       lineRenderer.SetPositions(points.ToArray());
-       
+        lineRenderer.SetPositions(points.ToArray());
+
     }
 }

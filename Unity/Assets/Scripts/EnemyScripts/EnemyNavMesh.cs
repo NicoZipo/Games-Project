@@ -22,6 +22,12 @@ public class EnemyNavMesh : MonoBehaviour
     }
     
     private void Update(){
+         LayerMask mask = LayerMask.GetMask("Player");
+         Debug.Log(mask.ToString());
+          if (Physics.Raycast(transform.position, transform.forward, 1000000000.0f, mask))
+            {
+                Debug.Log("Fired and hit a wall");
+            }
         if(spotted.spotted){
            
                 navMeshAgent.destination = player.position;
@@ -29,7 +35,6 @@ public class EnemyNavMesh : MonoBehaviour
         else{
             if(stoneCollided){
                 navMeshAgent.destination = stonePosition;
-                Debug.Log("position: " + stonePosition.ToString());
             }
             else{
                 if(collider.collidedTarget1){
