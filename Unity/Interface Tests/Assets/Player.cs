@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
-{
+public class Player : MonoBehaviour {
     
     // variables that are not yet there
     
@@ -18,6 +17,7 @@ public class Player : MonoBehaviour
     // Load Data
     public void LoadPlayer() {
         PlayerDataLevel1 data = SaveSystem.LoadPlayer();
+        
 
         Vector3 position;
         position.x = data.player.playerPosition[0];

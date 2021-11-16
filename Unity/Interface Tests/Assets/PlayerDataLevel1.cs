@@ -5,6 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerDataLevel1 {
 
+// variables for inter-scripting
+    public Player player;
+
 // stores if level has been finished
     public bool levelFinished;
 
@@ -116,12 +119,11 @@ public class PlayerDataLevel1 {
     }*/
 
     public PlayerDataLevel1(Player p) {
-        this.levelFinished = false;
-
+        
         // player data
-        Player player = new Player();
+        player = new Player();
 
-        this.player.playerPosition = new float[3];
+        /*this.player.playerPosition = new float[3];
         this.player.playerPosition[0] = p.transform.position.x;
         this.player.playerPosition[1] = p.transform.position.y;
         this.player.playerPosition[2] = p.transform.position.z;
@@ -129,7 +131,7 @@ public class PlayerDataLevel1 {
         this.player.playerRotation = new float[3];
         this.player.playerPosition[0] = p.transform.rotation.x;
         this.player.playerPosition[1] = p.transform.rotation.y;
-        this.player.playerPosition[2] = p.transform.rotation.z;
+        this.player.playerPosition[2] = p.transform.rotation.z;*/
 
         // enemy data
 
