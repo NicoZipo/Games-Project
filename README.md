@@ -1,3 +1,4 @@
 # Games-Project
 
-Romanalsdkjf
+Git-Repository von "Timeshift".
+Bitte für jeden Ordner das README beachten!
