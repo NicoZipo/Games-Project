@@ -10,7 +10,7 @@ Häuser Außenansicht -> Skizzen
  - Fenster
  - Türen
  - Dächer (Strohtextur/Nomralmap)
- x- Kamin
+ x Kamin
  
  Zäune -> Skizzen
  - Holzbalken
