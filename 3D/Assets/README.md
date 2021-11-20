@@ -4,11 +4,13 @@ Nach Relevanz geordnet
 
 immer etwas abrunden
 
+Mit x gekennzeichnete Assets sind bereits im Ordner vorhanden.
+
 Häuser Außenansicht -> Skizzen
  - Fenster
  - Türen
  - Dächer (Strohtextur/Nomralmap)
- - Kamin
+ - X Kamin
  
  Zäune -> Skizzen
  - Holzbalken
