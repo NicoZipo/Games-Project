@@ -25,7 +25,7 @@ public class PathCollider : MonoBehaviour
          collidedTarget3 = false;
      }
      if(col==col2){
-         Debug.Log("Collision 2");
+        
          collidedTarget1 = false;
          collidedTarget2 = true;
          collidedTarget3 = false;
