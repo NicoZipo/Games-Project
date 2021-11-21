@@ -6,11 +6,17 @@ immer etwas abrunden
 
 Mit x gekennzeichnete Assets sind bereits im Ordner vorhanden.
 
-Häuser Außenansicht -> Skizzen
- - Fenster
- - Türen
- - Dächer (Strohtextur/Nomralmap)
+X Yakubs Haus (nur außen)
+
+Assets Häuser (außen & innen):
+
+ - X Fenster (quer & hochkant)
  - X Kamin
+ - X Holzbalken
+ - X Dächer
+ - X Leiter
+ - X Sense
+ - X Wagenrad
  
  Zäune -> Skizzen
  - Holzbalken
