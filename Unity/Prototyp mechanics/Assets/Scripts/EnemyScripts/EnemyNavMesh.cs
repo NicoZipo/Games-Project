@@ -23,7 +23,7 @@ public class EnemyNavMesh : MonoBehaviour
     
     private void Update(){
          LayerMask mask = LayerMask.GetMask("Player");
-         Debug.Log(mask.ToString());
+         
           if (Physics.Raycast(transform.position, transform.forward, 1000000000.0f, mask))
             {
                 Debug.Log("Fired and hit a wall");
