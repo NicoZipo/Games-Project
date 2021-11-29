@@ -76,7 +76,7 @@ public class ChangePage : MonoBehaviour
 
 /* @Laura */
 // variables for the quests! i need those too, so I created them already :D
-    private short questNum = 0;
+    public static short questNum = 0;
 //
 
     void Start() {

@@ -10,18 +10,32 @@ public class Dialogues : MonoBehaviour
 {
 
     public static Text _dialogueText;
-    public static GameObject _DialogueUI;
+    public static Image _dialogueImage;
+    public static Text _pressF;
+    //public static GameObject _DialogueUI;
 
     public Text dialogueText;
-    public GameObject DialogueUI;
+    public  Image dialogueImage;
+    public Text pressF;
+    //public GameObject DialogueUI;
 
     public static bool dialogueIsOpen = false;
 
-    void Start() {
-        _dialogueText = dialogueText;
-        _DialogueUI = DialogueUI;
+    private short init;
 
-        DialogueUI.SetActive(false);
+    void Start() {
+        init = 1;
+        //Debug.Log(init);
+
+        _dialogueText = dialogueText;
+        _dialogueImage = dialogueImage;
+        _pressF = pressF;
+        //_DialogueUI = DialogueUI;
+
+        //DialogueUI.SetActive(false);
+        _dialogueImage.enabled = false;
+        _dialogueText.enabled = false;
+        _pressF.enabled = false;
     }
 
     void Update() {
@@ -29,7 +43,9 @@ public class Dialogues : MonoBehaviour
         if (dialogueIsOpen) {
 
             if (Input.GetKeyDown(KeyCode.F)) {
-                DialogueUI.SetActive(false);
+                _dialogueImage.enabled = false;
+                _dialogueText.enabled = false;
+                _pressF.enabled = false;
                 dialogueIsOpen = false;
 
                 Time.timeScale = 1;
@@ -48,6 +64,7 @@ public class Dialogues : MonoBehaviour
             Time.timeScale = 0;
             _dialogueText.GetComponent<Text>().text = "I grabbed the Key!";
             dialogueIsOpen = true;
+            //Debug.Log("The Key!");
         } else if (InteractWithObjects.currentFamily == esFamily.bacon) {
             Time.timeScale = 0;
             _dialogueText.GetComponent<Text>().text = "I found the bacon!";
@@ -58,7 +75,7 @@ public class Dialogues : MonoBehaviour
             dialogueIsOpen = true;
         }
 
-        _DialogueUI.SetActive(true);
+        setVisible();
     }
 
     public static void sayChildren() {
@@ -80,7 +97,7 @@ public class Dialogues : MonoBehaviour
             dialogueIsOpen = true;
         }
 
-        _DialogueUI.SetActive(true);
+        setVisible();
     }
 
     public static void sayWell() {
@@ -98,7 +115,7 @@ public class Dialogues : MonoBehaviour
             dialogueIsOpen = true;
         }
 
-        _DialogueUI.SetActive(true);
+        setVisible();
     }
 
     public static void sayFarmers() {
@@ -116,7 +133,7 @@ public class Dialogues : MonoBehaviour
             dialogueIsOpen = true;
         }
 
-        _DialogueUI.SetActive(true);
+        setVisible();
     }
 
     public static void sayCiaran() {
@@ -154,7 +171,14 @@ public class Dialogues : MonoBehaviour
             dialogueIsOpen = true;
         }
 
-        _DialogueUI.SetActive(true);
+        setVisible();
+    }
+
+    private static void setVisible() {
+        _dialogueImage.enabled = true;
+        _dialogueText.enabled = true;
+        _pressF.enabled = true;
+        //Debug.Log("set visible");
     }
 
 }
