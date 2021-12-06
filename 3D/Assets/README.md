@@ -10,13 +10,15 @@ X Yakubs Haus (nur außen)
 
 Assets Häuser (außen & innen):
 
- - X Fenster (quer & hochkant)
+ - X Fenster (quer(1stk) & hochkant(4stk))
  - X Kamin
- - X Holzbalken
- - X Dächer
+ - X Holzbalken (1 groß, 1 mittel)
+ - X Holzbretter
+ - X Dächer (1 groß, 1 mittel, 1 klein), bei Bedarf können mehrere Varianten erstellt werden.
  - X Leiter
  - X Sense
  - X Wagenrad
+ - X Eimer (2stk)
  
  Zäune -> Skizzen
  - Holzbalken
@@ -28,3 +30,5 @@ Assets Häuser (außen & innen):
  
  Bodentextur
  -Erdweg
+ 
+ roman:test

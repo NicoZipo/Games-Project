@@ -18,6 +18,8 @@ namespace DialogueNamespace {
 public class InteractWithObjects : MonoBehaviour
 {
 
+    // Instance for Dialogue
+
     public GameObject NotificationsUI;
     public GameObject keyObject;
 
@@ -96,7 +98,7 @@ public class InteractWithObjects : MonoBehaviour
                 whichScenario();
 
                 if (familyYes) {
-                    Dialogues.sayFamily();
+                    Dialogues.dialoguesInstance.sayFamily();
                     if (currentFamily == esFamily.key) {
                         isInRange = false;
                         sFamily = false;
@@ -104,13 +106,19 @@ public class InteractWithObjects : MonoBehaviour
                         currentFamily = esFamily.none;
                     }
                 } else if (childrenYes) {
-                    Dialogues.sayChildren();
+                    Dialogues.dialoguesInstance.sayChildren();
                 } else if (wellYes) {
-                    Dialogues.sayWell();
+                    Dialogues.dialoguesInstance.sayWell();
                 } else if (farmersYes) {
-                    Dialogues.sayFarmers();
+                    Dialogues.dialoguesInstance.sayFarmers();
                 } else if (ciaranYes) {
-                    Dialogues.sayCiaran();
+                    Dialogues.dialoguesInstance.sayCiaran();
+                    if (currentCiaran == esCiaran.book || currentCiaran == esCiaran.burnedPaper || currentCiaran == esCiaran.shelves || currentCiaran == esCiaran.coat) {
+                        isInRange = false;
+                        sCiaran = false;
+                        ciaranYes = false;
+                        currentCiaran = esCiaran.none;
+                    }
                 }
 
                 dialogueIsSaid = true;
