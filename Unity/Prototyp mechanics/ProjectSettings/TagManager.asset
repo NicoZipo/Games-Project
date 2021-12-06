@@ -6,12 +6,11 @@ TagManager:
   tags:
   - CinemachineTarget
   - Enemy
-  - sFamilyObject
-  - sCiaranObject
   - soBook
   - soKey
   - soDoor
   - oDrawing
+  - oBacon
   layers:
   - Default
   - TransparentFX
