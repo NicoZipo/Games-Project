@@ -13,9 +13,9 @@ Assets Häuser (außen & innen):
 ### INNEN:
 - [x] Bad
 - [x] Wohnzimmer
-- [] Küche
-- [] Schlafzimmer 
-- [] Abstellkammer
+- [ ] Küche
+- [ ] Schlafzimmer 
+- [ ] Abstellkammer
 
 ### AUßEN:
 - [x] Fenster (quer(1stk) & hochkant(4stk))
