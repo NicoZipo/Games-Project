@@ -6,7 +6,7 @@ immer etwas abrunden
 
 Mit x gekennzeichnete Assets sind bereits im Ordner vorhanden.
 
-X Yakubs Haus (nur außen)
+X Yakubs Haus (nur außen, vorhanden in 1.5x Breite & Tiefe, auch ohne Wände)
 
 Assets Häuser (außen & innen):
 
@@ -22,11 +22,11 @@ Assets Häuser (außen & innen):
 - [x] Kamin
 - [x] Holzbalken (1 groß, 1 mittel)
 - [x] Holzbretter
-- [x] Dächer (1 groß, 1 mittel, 1 klein), bei Bedarf können mehrere Varianten erstellt werden.
+- [x] Dächer (1 groß, 1 mittel, 1 klein), bei Bedarf können mehrere Varianten erstellt werden, das Hauptdach als Referenz für Dachgröße nehmen.
 - [x] Leiter
 - [x] Sense
 - [x] Wagenrad
-- [x] Eimer (2stk)
+- [x] Eimer (2stk) - sind bei Bad zu finden
  
  Zäune -> Skizzen
  - Holzbalken
